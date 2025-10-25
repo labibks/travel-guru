@@ -53,24 +53,11 @@ const RegisterPage = () => {
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
       {/* Left Side - Text */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-center bg-gradient-to-br from-green-400 via-teal-500 to-blue-500 text-white p-12 relative overflow-hidden">
-        <h1 className="text-5xl font-bold mb-6 animate-fadeInDown">
-          Welcome to WinterPetCare
-        </h1>
-        <p className="text-lg text-white/90 animate-fadeInUp">
-          Create your account and manage your pets with ease. Enjoy a seamless
-          and interactive experience.
-        </p>
-
-        <div className="absolute top-0 left-0 w-full h-full opacity-20">
-          <div className="bg-white w-36 h-36 rounded-full absolute -top-10 -left-10 animate-spin-slow"></div>
-          <div className="bg-white w-28 h-28 rounded-full absolute bottom-10 right-10 animate-pulse-slow"></div>
-        </div>
-      </div>
+      
 
       {/* Right Side - Form */}
       <div
-        className="w-full md:w-1/2 flex items-center justify-center relative pt-8 
+        className="w-full  flex items-center justify-center relative pt-8 
   bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 overflow-hidden"
       >
         <div className="bg-white/20 backdrop-blur-md p-12 rounded-3xl shadow-2xl w-full max-w-md border border-white/30">
