@@ -1,5 +1,6 @@
 // src/components/BookingForm.jsx
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 
 const BookingForm = () => {
   const [origin, setOrigin] = useState("Dhaka");
@@ -8,7 +9,7 @@ const BookingForm = () => {
   const [toDate, setToDate] = useState("");
 
   const handleBooking = () => {
-    alert(
+    toast(
       `Booking from ${origin} to ${destination} from ${fromDate} to ${toDate}`
     );
   };

@@ -8,6 +8,7 @@ import LoginPage from "../Pages/LoginPage";
 import RegisterPage from "../Pages/RegisterPage";
 import ForgetPass from "../Pages/ForgetPass";
 import PrivetRoute from "./PrivetRoute";
+import BookingForm from "../component/BookingForm";
 
  export const router = createBrowserRouter([
    {
@@ -33,7 +34,7 @@ import PrivetRoute from "./PrivetRoute";
        },
        {
          path: "/booking",
-         Component: Booking,
+         element: (<PrivetRoute><BookingForm></BookingForm></PrivetRoute>)
        },
        {
          path: "/destination",
